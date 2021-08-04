@@ -6,9 +6,13 @@
         <h1>Order List</h1>
         {% for order in orders %}
             <div>
+                
                 <p>
-                {{order.customer_name}}: {{order.type_of_clothes}}
+                    <a href="/order/1">
+                       {{order.customer_name}}: {{order.type_of_clothes}}
+                    </a>
                 </p>
+            
             </div>
         {% endfor %}
     </body>
