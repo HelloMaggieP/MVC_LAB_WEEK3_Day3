@@ -5,14 +5,17 @@
 
     </head>
     <body>
-        <h1>Order List</h1>
+        <h1>Customer List</h1>
         {% for order in orders %}
             <div>
                 
-                <p>
-                    <a href="/orders/{{orders.index(order)}}">
-                       {{order.customer_name}}: {{order.type_of_clothes}}
-                    </a>
+                <p> <ul>
+                         <li>
+                            <a href="/orders/{{orders.index(order)}}">
+                             {{order.customer_name}}
+                             </a>
+                         </li>
+                    </ul>
                 </p>
             
             </div>
